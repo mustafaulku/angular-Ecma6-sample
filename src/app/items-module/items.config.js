@@ -6,7 +6,7 @@ export default function config($stateProvider) {
         views: {
             'main': {
                 controller: 'ItemsController',
-                templateUrl: 'app/items/items.html',
+                templateUrl: 'app/items-module/items.html',
                 controllerAs: 'vm'
             }
         },

@@ -7,7 +7,7 @@ import appConfig from './app.config';
 import HomeController from './Home/HomeController';
 
 import servicesModule from './Services';
-import itemsModule from './items';
+import itemsModule from './items-module';
 
 
 
