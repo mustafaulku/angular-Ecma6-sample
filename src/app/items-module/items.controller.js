@@ -1,10 +1,16 @@
 
 export default class ItemsController {
-    constructor($stateParams) {
-        console.log('items controller ctor start');
+    constructor(itemService) {
+        this.itemService = itemService;
+        this.items = null;
+        this.loadItems();
+    }
 
-        console.log('items controller ctor end');
+    loadItems() {
+        return this.itemService.findAll().then((response)=> {
+            this.items = response.results;
+        });
     }
 }
 
-ItemsController.$inject = [ '$stateParams'];
+ItemsController.$inject = ['itemService'];

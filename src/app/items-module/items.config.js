@@ -9,9 +9,6 @@ export default function config($stateProvider) {
                 templateUrl: 'app/items-module/items.html',
                 controllerAs: 'vm'
             }
-        },
-        data: {
-            pageTitle: 'Home'
         }
     });
 }

@@ -1,11 +1,6 @@
 
-<div class="test" style="background-color: #00b3ee; width: 100%; height: 500px;">
-    Items<br>
-    Items<br>
-    Items<br>
-    Items<br>
-    Items<br>
-    Items<br>
-    Items<br>
-    Items<br>
+<div class="item-container">
+    <div class="item" ng-repeat="item in vm.items">
+        {{item.ItemName}}
+    </div>
 </div>

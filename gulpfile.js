@@ -10,6 +10,7 @@ var plugins = require('gulp-load-plugins')();
 var src = {
 	html: 'src/**/*.html',
 	libs: 'src/libs/**',
+	style: 'src/style/*.css',
 	scripts: {
 		all: 'src/app/**/*.js',
 		app: 'src/app/app.js'
@@ -22,12 +23,19 @@ var out = {
 	scripts: {
 		file: 'app.min.js',
 		folder: build + 'app/'
-	}
+	},
+	style: build + 'style/'
 }
 
 gulp.task('html', function() {
 	return gulp.src(src.html)
 		.pipe(gulp.dest(build))
+		.pipe(plugins.connect.reload());
+});
+
+gulp.task('style', function() {
+	return gulp.src(src.style)
+		.pipe(gulp.dest(out.style))
 		.pipe(plugins.connect.reload());
 });
 
@@ -87,8 +95,9 @@ gulp.task('serve', ['build', 'watch'], function() {
 gulp.task('watch', function() {
 	gulp.watch(src.libs, ['libs']);
 	gulp.watch(src.html, ['html']);
+	gulp.watch(src.style, ['style']);
 	gulp.watch(src.scripts.all, ['scripts']);
 })
 
-gulp.task('build', ['scripts', 'html', 'libs']);
+gulp.task('build', ['scripts', 'html', 'libs', 'style']);
 gulp.task('default', ['serve']);
