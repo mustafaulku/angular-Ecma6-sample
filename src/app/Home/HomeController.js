@@ -1,10 +1,8 @@
 import angular from 'angular';
 
 export default class HomeController {
-	constructor($scope) {
-
-		$scope.person = 'World';
-
+	constructor($scope, $location) {
+		$scope.message = 'World';
 	}
 }
 

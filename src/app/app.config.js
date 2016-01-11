@@ -1,7 +1,9 @@
 
-export default  function configutator($locationProvider ) {
+
+export default  function configutator($stateProvider, $urlRouterProvider, $locationProvider ) {
 
     $locationProvider.hashPrefix('!');
+    $urlRouterProvider.otherwise('/items');
 }
 
-configutator.$inject = ['$locationProvider'];
+configutator.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
