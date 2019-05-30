@@ -6,6 +6,7 @@ const qaPairs = [
   {q: 'nasılsın', a:"iyi sen"},
   {q: 'bu güzel de kimmiş', a:"AAA BENMİŞİM"},
   {q: 'ARTIK YETER Mİ', a:"YETMEZZZZ"},
+  {q: 'adın ne', a:"Gazime ama sen bana Gazimettin de."},
   {q: 'sen kimsin', a:" BEN BIR YIKIKIM"},
   {q: 'newrelic güncellemesi hakkında konuşuyor.', a:"https://youtu.be/QUtHu50HGVM"},
   {q: 'Sibel"in son sözün nedir', a:"Size son sozlerim bunlar:\n https://www.instagram.com/p/Bxzff5ahpIZ/?igshid=1358c0k25ovdv"},
