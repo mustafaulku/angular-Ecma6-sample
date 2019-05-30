@@ -1,5 +1,5 @@
 const qaPairs = [
-  {q: 'uyandın mı?', a:"EEEVEET"},
+  {q: 'uyandın mı?', a:"EVET"},
   {q: 'newrelic öldü mü?', a:"yok ölmedi, kalbimizde"},
   {q: 'Yıkık mısın', a:"https://youtu.be/rUNPLIkY_pU"},
   {q: 'sibel nerede', a:"boş yapıyor"},
